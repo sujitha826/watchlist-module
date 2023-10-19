@@ -82,7 +82,7 @@ class ContactsScreenState extends State<ContactsScreen>
                     // Add your onPressed functionality here
                     // pass the no of WL groups created back to Native screen
                     print('No of WL groups:$_noOfGroups');
-                    _channel.invokeMethod('helloFromFlutter', { "groups": _noOfGroups });
+                    _channel.invokeMethod('helloFromFlutter', _noOfGroups );
                   },
                 ),
               ),
